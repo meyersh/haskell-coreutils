@@ -2,15 +2,15 @@ A trivial effort to implement the UNIX coreutils in Haskell.
 ============================================================
 
 To teach myself the Haskell programming language, I'm trying to
-re-create the UNIX coreutils (cp, cat, echo, etc).
+re-create the UNIX SYSV coreutils (cp, cat, echo, etc).
 
 This repository is the result of that effort.
 
-Implementing...
-===============
+From the Man Pages
+==================
 
-`cat`
------
+cat
+---
 
 `cat ( BU_CMD ) cat ( BU_CMD )`
 
@@ -56,3 +56,41 @@ printable.
 `cat` returns the following values:
 `0` If all input ﬁles were output successfully.
 `> 0` If an error occurred while accessing one or more input ﬁles.
+
+echo
+----
+
+`echo ( BU_CMD )`
+
+### NAME
+`echo` – echo arguments
+SYNOPSIS
+
+  echo [arg] . . .
+  echo [arg]
+  
+### DESCRIPTION
+
+`echo` writes its arguments separated by blanks and terminated by a
+new-line on the standard output. It processes supplementary code set
+characters according to the locale speciﬁed in the `LC_CTYPE`
+environment variable [see `LANG` on `envvar(BA_ENV)`].  The
+`/usr/bin/sh` version understands the following C-like escape
+conventions; beware of conﬂicts with the shell’s use of \:
+
+`\b` backspace
+`\c` print line without new-line
+`\f` form-feed
+`\n` new-line
+`\r` carriage return
+`\t` tab
+`\v` vertical tab
+`\\` backslash
+`\0n` where n is the 1-, 2-, or 3-digit octal encoding of an 8-bit character.
+Each byte of multibyte characters should be preceded by backslash
+(\).
+`-n` do not add the newline to the output.
+
+`echo` is useful for producing diagnostics in command ﬁles, for
+sending known data into a pipe, and for displaying the contents of
+environment variables.
