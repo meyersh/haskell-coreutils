@@ -27,11 +27,11 @@ cat
 `cat` reads each ﬁlein sequence and writes it on the standard
 output. Thus 
   
-  `cat file` 
+    cat file
   
 prints the contents of `file` on your terminal, and 
 
-  `cat file1 file2 > file3` 
+    cat file1 file2 > file3
   
 concatenates `file1` and `file2`, and writes the results in
 `file3`. If no input ﬁle is given, or if the argument - is
@@ -64,10 +64,11 @@ echo
 
 ### NAME
 `echo` – echo arguments
-SYNOPSIS
 
-  echo [arg] . . .
-  echo [arg]
+### SYNOPSIS
+
+    echo [arg] . . .
+    echo [arg]
   
 ### DESCRIPTION
 
