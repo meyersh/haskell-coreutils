@@ -40,9 +40,9 @@ supplementary code set characters according to the locale speciﬁed in
 the `LC_CTYPE` environment variable [see `LANG` on `envvar(BA_ENV)`].
 
 The following options apply to `cat`:
-- u The output is not buffered. (The default is buffered output.)
-- s `cat` is silent about non-existent ﬁles.
-- v Causes non-printing characters (with the exception of tabs,
+- `-u` The output is not buffered. (The default is buffered output.)
+- `-s` `cat` is silent about non-existent ﬁles.
+- `-v` Causes non-printing characters (with the exception of tabs,
 new-lines, and form-feeds) to be printed visibly. ASCII control
 characters (octal 000 – 037) are printed as ˆ n, where n is the
 corresponding ASCII character in the range octal 100 – 137 (@, A, B,
