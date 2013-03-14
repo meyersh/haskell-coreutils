@@ -12,7 +12,7 @@ From the Man Pages
 cat
 ---
 
-`cat ( BU_CMD ) cat ( BU_CMD )`
+`cat ( BU_CMD )`
 
 ### NAME
 
