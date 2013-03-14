@@ -8,6 +8,7 @@ This repository is the result of that effort.
 
 From the Man Pages
 ==================
+PDF: http://www.sco.com/developers/devspecs/vol2.pdf
 
 cat
 ---
