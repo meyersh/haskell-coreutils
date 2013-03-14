@@ -79,18 +79,18 @@ environment variable [see `LANG` on `envvar(BA_ENV)`].  The
 `/usr/bin/sh` version understands the following C-like escape
 conventions; beware of conﬂicts with the shell’s use of \:
 
-`\b` backspace
-`\c` print line without new-line
-`\f` form-feed
-`\n` new-line
-`\r` carriage return
-`\t` tab
-`\v` vertical tab
-`\\` backslash
-`\0n` where n is the 1-, 2-, or 3-digit octal encoding of an 8-bit character.
+- `\b` backespace
+- `\c` print line without new-line
+- `\f` form-feed
+- `\n` new-line
+- `\r` carriage return
+- `\t` tab
+- `\v` vertical tab
+- `\\` backslash
+- `\0n` where n is the 1-, 2-, or 3-digit octal encoding of an 8-bit character.
 Each byte of multibyte characters should be preceded by backslash
 (\).
-`-n` do not add the newline to the output.
+- `-n` do not add the newline to the output.
 
 `echo` is useful for producing diagnostics in command ﬁles, for
 sending known data into a pipe, and for displaying the contents of
